@@ -2060,6 +2060,7 @@ input, select, textarea {
 
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
+
 		}
 
 /* Image */
@@ -2232,7 +2233,7 @@ input, select, textarea {
 			}
 
 			ul.icons li .icon:before {
-				font-size: 1.5em;
+				font-size: 2.5em;
 			}
 
 /* Labeled Icons */
@@ -3677,6 +3678,9 @@ body {  background: #1a181b; -webkit-font-smoothing: antialiased; -moz-osx-font-
 	margin:	0px 0px 0px 0px;
 	position: relative;
 	left: -8%;
+	height: auto;
+
+
 }
 
 .frame *{
@@ -3685,8 +3689,56 @@ body {  background: #1a181b; -webkit-font-smoothing: antialiased; -moz-osx-font-
 	max-height:100px;
 }
 
+.fragment{
+	position: relative;
+}
 
 
+
+.markFrontEnd{
+	background-image: url("../../images/thumbs/fronteng.png");
+
+}
+
+
+.markBackEnd{
+	background-image: url("../../images/thumbs/database.png");
+
+}
+
+.markLanguages{
+	background-image: url("../../images/thumbs/programming.ong.png");
+
+}
+
+.markDatabase{
+	background-image: url("../../images/thumbs/backend.png");
+
+
+}
+
+.fragment .mark{
+	width:auto;
+	height:40px;
+	position:relative;
+	top:-30px;
+	left:0px;
+	z-index: 23;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	background-position: 0px 0px;
+	font-size: 20px;
+	padding: 0em 2em;
+	margin: 0px 0px;
+	color:#fff;
+}
+
+.columner{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
 
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
@@ -4295,7 +4347,7 @@ code {
 }
 
 section{
-	height: 650px;
+	height: auto;
 }
 
 
@@ -4540,3 +4592,6 @@ section{
   background: #333;
   color: #fff;
 }
+
+
+
