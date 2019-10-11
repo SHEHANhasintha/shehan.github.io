@@ -1,9 +1,10 @@
 	const nav = document.getElementsByTagName("nav")[0];
 	document.addEventListener("scroll", (e) => {
-		if (e.pageY > 2){
-			nav.style.backgroundColor = "#700";
+		console.log(window.pageYOffset)
+		if (window.pageYOffset > 0){
+			nav.style.backgroundColor = "#000";
 		}else{
-			nav.style.backgroundColor = "#7000";
+			nav.style.backgroundColor = "#fff0";
 		}
 	});
 
