@@ -5377,6 +5377,30 @@ section{
   border-bottom-right-radius: 0;
 }
 
+.container .card:hover .face.face1.four{
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+    background-image: url("images/fulls/tetris.PNG") ,url("../../images/fulls/tetris.PNG");
+		
+		background-position: top left,							top left;
+		background-repeat: repeat,								no-repeat;
+		background-size: 300px 200px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.container .card:hover .face.face1.five{
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+    background-image: url("images/fulls/restApi.jpeg") ,url("../../images/fulls/restApi.jpeg");
+		
+		background-position: top left,							top left;
+		background-repeat: repeat,								no-repeat;
+		background-size: 300px 200px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .container .card:hover .face1 * {
 	-webkit-opacity: 1;
 	opacity: 1;
