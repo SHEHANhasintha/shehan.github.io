@@ -1,0 +1,434 @@
+:root{
+	--sliderHeight: 250px;
+	--headerHeight: 50px;
+	--topMargin: 100px;
+}
+
+body{
+	background-image: url("src/images.jpg");
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100vw;
+	z-index: -1;
+	height: auto;
+	overflow-x: hidden;
+	outline: 0px;
+
+}
+body::before{
+	content: "";
+	height: 1000%;
+	width: 200vw;
+	background: #000a;
+	z-index: 1;
+	position: fixed;
+}
+
+.area{
+	height: 1000%;
+	width: 200vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background: #eee;
+	z-index: 20;
+	position: fixed;
+}
+
+header{
+
+	height: var(--headerHeight);
+	width: 100vw;
+	position:  relative;
+	z-index: 5;
+
+}
+
+nav div{
+	display: flex;
+	flex-direction: row;
+	width: 50vw;
+	height: 50px;
+	justify-content: space-around;
+	text-align: center;
+	vertical-align: center;
+	margin-top: 20px;
+	z-index: 5;
+
+}
+
+nav div *{
+	width: 75px;
+		background-color: #4556;
+		height: 20px;
+		padding: 10px;
+		color: #fffa;
+		text-decoration: none;
+		text-transform: capitalize;
+		z-index: 5;
+}
+nav{
+	position: fixed;
+		display: flex;
+	flex-direction: column;
+	width: 100vw;
+	justify-content: space-between;
+	align-items: center;
+	height:  130px;
+	transition: 1s background-color;
+	z-index: 5;
+	background-color: #fff0;
+}
+
+
+#header-img{
+	margin-top: 10px;
+	width: 350px;
+	height: auto;
+}
+
+.form-div{
+	margin: var(--topMargin) auto 20px auto;
+	z-index: 2;
+}
+
+form[name="email-form"]{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+
+
+footer button{
+	background: #fff;
+	border: solid 2px #0005;
+	border-radius: 5px;
+	width: 100px;
+	height: 50px;
+	margin: 25px auto;
+
+}
+article{
+	grid-area: footerArticle;
+	text-align: center;
+	padding: 0px 2vw;
+
+
+}
+
+
+footer h2{
+	grid-area:  footerh2;
+	font-size: 15px;
+	text-indent: 0px;
+
+}
+
+.footerbutton{
+	grid-area: footerbutton;
+}
+
+footer {
+	display: grid;
+	margin: auto;
+}
+
+input[type="text"],input[type="email"]{
+	background: none;
+	border: none;
+	outline: 0px;
+	color: #fff;
+	font-size: 20px;
+	vertical-align: center;
+	width: 300px;
+
+}
+
+
+
+input[type="text"]::placeholder,input[type="email"]::placeholder{
+	color: #fffa;
+	font-size: 20px;
+}
+
+.slider{
+	width: 100vw;
+	height: var(--sliderHeight);
+	background: #0009;
+	cursor: pointer;
+
+}
+
+#section1{
+	display: flex;
+	justify-content: space-around;
+	max-width: 800px;
+		margin: auto;
+		position: relative;
+		top: 70px;
+
+}
+
+.object{
+	width: 150px !important;
+	height: 150px !important;
+  	max-width: 150px !important;
+	max-height: 150px !important;
+	border-radius: 50%;
+	z-index: 4 !important;
+	background: #fffa;
+	box-shadow: 0px 0px 5px 5px #fff3;
+	
+}
+
+div > img{
+  -webkit-transform: rotate(-90deg);
+  -ms-transform:rotate(-90deg);
+	transform: rotate(-90deg);
+	width: 200px;
+	height: auto;
+	position: relative;
+	left: -17%;
+	right: -17%;
+	top: -17%;
+	bottom: -17%;
+}
+
+input[type="submit"]{
+	background: none;
+	width: 100px;
+	height: 40px;
+	color: #fff;
+	border: solid 2px #fff;
+	cursor: pointer;
+	border-radius: 10px;
+	margin-left: 20px;
+}
+
+.switch{
+	width: 100vw;
+	height: auto;
+	background: #fff5;
+	z-index: 3;
+	position: relative;
+	top: 0px;
+
+}
+
+.switch div{
+	max-width: 60vw;
+	display: flex;
+		margin: auto;
+	width: 100%;
+	height: 100%;
+
+
+}
+
+.switch  button{
+	width: 70px;
+	height: 40px;
+	background: none;
+	z-index: 4;
+	margin: 10px auto;
+	border: solid 1px #fff;
+	border-radius: 20px;
+	color: #fffc;
+	font-size: 15px;
+}
+
+
+footer{
+	
+	width: 100vw;
+	background: #fffa;
+	z-index: 4;
+	position: relative;
+
+
+}
+
+footer h2{
+	font-family: "Segoe UI";
+	text-align: center;
+}
+
+iframe{
+	position: relative;
+  min-height:320px;
+	top: 0px;
+	bottom: 0px;
+	z-index: 3;
+	width: 50vw ;
+	height: 50vh ;
+	margin: 20px 0px;
+}
+
+a{
+	transition: 0.3s background-color;
+}
+
+
+a:hover{
+	background-color: #689;
+}
+button{
+	transition: 0.3s background-color;
+}
+
+button:hover{
+	background-color: #889;
+}
+input[type="submit"]{
+	transition: 0.3s background-color;
+}
+
+input[type="submit"]:hover{
+	background-color: #845;
+}
+
+.fab{
+	padding: 0px;
+	margin: 0px;
+	text-indent: 10px;
+	cursor: pointer;
+}
+
+.slider{
+	z-index: 3;
+}
+
+.area *{
+
+	width: 50px;
+	height: 50px;
+	background-color: #848 !important;
+	position: relative;
+	border-radius: 50%;
+	margin: 5px;
+	bottom: calc(50vh - 50px);
+	z-index: 25;
+}
+
+
+
+@media screen and (min-width: 1040px){
+	footer{
+		height: 230px;
+		grid-template-columns: 1fr 150px;
+		grid-template-areas: 
+		"footerh2 footerbutton"
+		"footerArticle footerbutton"
+		;
+	}
+
+
+}
+
+@media screen and (max-width: 1040px){
+	footer{
+		height: 230px;
+		grid-template-columns: 1fr 150px;
+		grid-template-areas: 
+		"footerh2 footerbutton"
+		"footerArticle footerbutton"
+		;
+	}
+
+	article a{
+		display: inline-block;
+		text-align: center;
+		margin: auto;
+	}
+
+	article a i{
+		font-size: 15px;
+	}
+
+
+}
+@media screen and (max-width: 840px){
+	footer{
+		height: 300px;
+		grid-template-columns: 1fr 150px;
+		grid-template-areas: 
+		"footerh2 footerbutton"
+		"footerArticle footerbutton"
+		;
+	}
+
+	article a{
+		display: inline-block;
+		text-align: center;
+		margin: auto;
+	}
+
+	article a i{
+		font-size: 25px;
+	}
+
+
+}
+@media screen and (max-width: 640px){
+	footer{
+		height: 300px;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"footerh2"
+		"footerbutton"
+		"footerArticle"
+		;
+	}
+
+	article a{
+		display: inline-block;
+		text-align: center;
+		margin: auto;
+	}
+
+	article a i{
+		font-size: 25px;
+	}
+
+
+
+}
+
+@media screen and (max-width: 460px){
+	footer{
+		height: 500px;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"footerh2"
+		"footerbutton"
+		"footerArticle"
+		;
+	}
+
+	article a{
+		display: inline-block;
+		text-align: center;
+		margin: auto;
+	}
+
+	article a i{
+		font-size: 25px;
+	}
+
+
+
+
+}
+
+
+
