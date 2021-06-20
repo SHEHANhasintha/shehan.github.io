@@ -6,8 +6,8 @@
 .pnp.js
 
 # fontend
+/build
 /client
-/routes
 
 # testing
 /coverage
