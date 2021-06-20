@@ -6,8 +6,7 @@
 .pnp.js
 
 # fontend
-/client/node_modules
-/client/build
+/client
 /routes
 
 # testing
