@@ -1,7 +1,7 @@
 import React, { Component,useContext,useEffect } from '../../node_modules/react';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 
-import './Header.css';
+import './Header.scss';
 import Button from './../components/button'
 
 function Header(props){
