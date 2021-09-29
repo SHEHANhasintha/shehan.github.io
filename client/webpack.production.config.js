@@ -73,8 +73,20 @@ module.exports = env => {
         use: { loader: "worker-loader" }
       },
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        test: /\.s[ac]ss$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+              sassOptions: {
+                outputStyle: "compressed",
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.svg$/,

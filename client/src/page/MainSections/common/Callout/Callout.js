@@ -1,6 +1,5 @@
 import React, { Component, useContext, useEffect } from 'react';
 
-import Header from '../../../../header/Header'
 import './Callout.scss'
 
 function Callout(props) {

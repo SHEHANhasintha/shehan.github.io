@@ -10,6 +10,8 @@ import {
     Callout
 } from './common';
 
+// import "./sass/PersonalDetails.scss";
+
 function MainSections(props) {
 
     const clicked = (e) => {
@@ -24,13 +26,13 @@ function MainSections(props) {
     return (
         <>
             <PersonalDetails />
-            <Profile />
+            {/*<Profile />
             <Experiance />
             <YoutubePage/>
             <Blog />
             <Education />
             <Callout />
-            <Footer />
+            <Footer />*/}
         </>
     );
 }

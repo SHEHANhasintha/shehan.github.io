@@ -1,7 +1,6 @@
 import React, { Component, useContext, useEffect } from 'react';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 
-import Header from '../../../../header/Header'
 import './YoutubePage.scss'
 
 function YoutubePage(props) {

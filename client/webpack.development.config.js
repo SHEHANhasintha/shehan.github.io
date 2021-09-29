@@ -1,4 +1,4 @@
-const autoprefixer = require('autoprefixer');
+// const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 
 // const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
@@ -9,7 +9,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 var ManifestPlugin = require('webpack-manifest-plugin');
 
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const TerserJSPlugin = require('terser-webpack-plugin');
 
@@ -84,12 +84,17 @@ module.exports = env => {
         {
           test: /\.s[ac]ss$/i,
           use: [
-            // Creates `style` nodes from JS strings
             "style-loader",
-            // Translates CSS into CommonJS
-            "css-loader"
-            // Compiles Sass to CSS
-            
+            "css-loader",
+            {
+              loader: "sass-loader",
+              options: {
+                sourceMap: true,
+                sassOptions: {
+                  outputStyle: "compressed",
+                },
+              },
+            },
           ],
         },
         {
